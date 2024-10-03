@@ -1,0 +1,34 @@
+<div class="surface-ground flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden">
+  <div class="flex flex-column align-items-center justify-content-center">
+      <div style="border-radius:56px; padding:0.3rem; background: linear-gradient(180deg, rgba(33, 150, 243, 0.4) 10%, rgba(33, 150, 243, 0) 30%);">
+          <div class="w-full surface-card py-8 px-5 sm:px-8 flex flex-column align-items-center" style="border-radius:53px">
+              <h1 class="text-900 font-bold text-xl lg:text-5xl mb-2"></h1>
+                  <div class="field">
+                    <label for="firstName">Nom</label> &nbsp;
+                    <input type="text" pInputText id="firstName" [(ngModel)]="user.firstName" readonly/>
+                  </div>
+
+                  <div class="field">
+                    <label for="lastName">Prénom</label>&nbsp;
+                    <input type="text" pInputText id="lastName" [(ngModel)]="user.lastName" readonly />
+                  </div>
+
+                  <div class="field">
+                    <label for="email">Email</label>&nbsp;
+                    <input type="text" pInputText id="email" [(ngModel)]="user.email" readonly />
+                  </div>
+
+                  <div class="field">
+                    <label for="address">Adresse </label> &nbsp;
+                    <input type="text" pInputText id="address" [(ngModel)]="user.address" readonly />
+                  </div>
+                  <div class="field">
+                    <button pButton pRipple label="List utilisateur" icon="pi pi-chevron-circle-left" class="p-button-warning" [routerLink]="'/users'"></button>
+
+                  </div>
+
+
+          </div>
+      </div>
+  </div>
+</div>
